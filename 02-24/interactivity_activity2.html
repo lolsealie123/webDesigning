@@ -1,0 +1,71 @@
+<!doctype.html>
+    <html lang="en">
+
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-29 Interactivity Activity 2</title>
+    <link rel="stylesheet" type="text/css" href="linking1.css">
+    <style>
+        ul {
+            font-family: serif;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: red;
+            padding: 10px;
+            margin-bottom: 5px
+        }
+
+        ul li {
+            margin: 10px;
+            border: 5px solid black;
+            background-color: aqua;
+            width: 150px;
+            text-align: center;
+            padding: 5px;
+            list-style: none;
+            display: inline
+        }
+
+        body {
+            text-align: center;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: aqua;
+
+        }
+
+        a:hover {
+            color: black;
+            font-weight: 900;
+        }
+        a:active{
+            color:orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Interactivity</h1>
+    <p>Anchor tags do not inherit the styles of the rest of the page because the browser gives them a higher priority than regular text tags.</p>
+    <h2>Changing Link Styles</h2>
+    <p>Here are some links. Let's change their styles!</p>
+    <ul>
+        <li><a href="http://codeninjas.com" class=_blank>Codeninjas.com</a></li>
+        <li><a href="http://google.com" class=_blank>Google.com</a></li>
+        <li><a href="http://wikipedia.org" class=_blank>Wikipedia.org</a></li>
+    </ul>
+    <h2>Link States</h2>
+    <p>Links have multiple <em>states</em> depending on the situation. Each state has its own selector. They are:</p>
+    <ul class="states">
+        <li><i><b>a:link</b> - an unvisited link</i></li>
+        <li><i><b>a:visited</b> - a link that has been visited before</i></li>
+        <li><i><b>a:hover</b> - the link when the mouse is over it</i></li>
+        <li><i><b>a:active</b> - a link that is currently selected</i></li>
+    </ul>
+    <p><strong>IMPORTANT:</strong> The selectors for link states MUST be in a certain order. <em>a:hover</em> MUST come after a:link and a:visited. <em>a:active</em> MUST come after a:hover.</p>
+</body></html>
